@@ -27,4 +27,20 @@ public class Queue<T> {
         System.out.println();
 
     }
+
+    //UC4
+    public T popBegin() {
+        Node<T> temp = head;
+        if (head == null)
+            return null;
+        T popData = head.data;
+        head = head.next;
+        return popData;
+    }
+
+
+        public boolean isEmpty() {
+            return head == null;
+        }
+
 }
